@@ -1,0 +1,144 @@
+doctype 5
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title Curiculum vitae Pierre-Guillaume Herveou
+    link(href="//get.pictos.cc/fonts/974/7", rel="stylesheet", type="text/css")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    //if lt IE 9
+      script(src="//html5shiv.googlecode.com/svn/trunk/html5.js")
+    meta(name="viewport", content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width")
+    script(src="/javascripts/prefixfree.min.js")
+  body
+
+    header
+      h1 Pierre-Guillaume Herveou
+      p Ingenieur nouvelles technologies, fondateur de squadsheet.com
+
+    #banner
+      ul
+        li: a(href='/en') Version Anglaise
+        li(data-icon='l') 76 rue notre dame des champs 75006 Paris France
+        li(data-icon='p') +33 (0) 7 70 05 25 69
+        li(data-icon='m') pgherveou@gmail.com
+
+
+    .wrapper
+
+      nav.page
+        img.portrait(src='images/me.jpeg')
+        :markdown
+          - **MSCS** ISEP 2006
+          - **7 ans** d'experience US/UK/FR
+          - **Bilingue** Français / Anglais
+          - Création de nouvelles generations d'applications web et mobile
+
+
+
+      section.page.main
+
+        h3 Experiences
+
+        .exp
+          .header
+            .pull-left
+              .company Squadsheet
+              .position  fondateur
+            .pull-right
+              .dates Sept 2011 - Aujourdhui
+              .place Paris
+          .body
+            :markdown
+              Squadsheet est un réseau social sportif qui permet aux joueurs d'organiser facilement leurs matchs et d'affronter de nouvelles équipes.
+
+              - Création du concept
+              - Prototype & Design
+              - Développement et mise en production
+
+        .exp
+          .header
+            .pull-left
+              .company Upclear
+              .position Directeur Technique
+            .pull-right
+              .dates Jan 2011 - June 2011
+              .place London
+          .body
+            :markdown
+              Upclear est une startup spécialisée dans les solutions de trade promotion management dans le secteur de la grande consommation (Danone, ...)
+
+              - Design et development de la nouvelle solution web
+              - Management et recrutement de l'équipe technique
+
+        .exp
+          .header
+            .pull-left
+              .company SGCIB - commodity trading
+              .position Software engineer
+            .pull-right
+              .dates Avr 2007 - Jan 2011
+              .place NYC - Paris - London
+          .body
+            :markdown
+              Londres (8 mois)
+
+              - Responsable de l'equipe de développement rapide pour le front-office.
+              - Automatisation du workflow papier de prise d'ordres entre les équipes front et back-office.
+
+              Paris (15 mois)
+
+              - Responsable de l'equipe de développement rapide pour le marché du carbone.
+              - Développement d'une application de monitoring et d'analyse des risques des projets d'origination.
+
+              New-York (18 mois)
+
+              - Création d'un outil de charting d'analyse des prix des matières premières (prix d'innovation).
+              - Développement d'un service d'historisation des prix des matières premières.
+              - Support des outils front office (pricers, risk-management, …).
+
+        .exp
+          .header
+            .pull-left
+              .company Axway, Sopra group
+              .position Pre-sales engineer
+            .pull-right
+              .dates Feb 2005 - Avr 2007
+              .place Paris
+          .body
+            :markdown
+              - Création de la nouvelle solution financière utilisant les softwares Axway Business Monitoring et Buisness process
+              - Présentations de proof of concepts lors de salons ou showrooms.
+
+        h3 Education
+
+        .exp
+          .header
+            .pull-left
+              .company Institut Supérieur d’Electronique de Paris
+              .position Ingénieur en technologies de l'information
+            .pull-right
+              .dates 2001 - 2006
+
+            .body
+              :markdown
+                - Echange erasmus avec l'unviersité de Séville
+                - Classes préparatoires MPSI & PSI
+
+        h3 Skills &amp; Expertise
+        :markdown
+          **Plateforme technologique actuelle**
+
+          - Serverr: Node.js, mongodb, redis, express, socket.io
+          - Client: HTML5, CSS3, Jade, JQuery, Backbone.js
+          - SCM:  git, github
+          - Production: Amazon EC2, S3, cloudfront
+
+          **Autres technologies**
+
+          - Java, .NET, Objective-C, SQL, Grails, Flex, php, c
+
+        h3 Interets
+        p
+          | Football, Tennis, trekking, cours particuler en math et physique,
+          | Association humanitaire Avenir-et-Partage
