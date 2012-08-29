@@ -6,9 +6,10 @@
 var express = require('express')
   , routes = require('./routes')
   , http = require('http')
+  , fs   = require('fs')
   , path = require('path');
 
-var app = express();
+var app = module.exports = express();
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
@@ -26,10 +27,22 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/', routes.en);
-app.get('/en', routes.en);
-app.get('/fr', routes.fr);
+if (process.env.BUILD) {
+  app.render('fr', function (err, resp) {
+    fs.writeFileSync('fr.html', resp);
+  });
 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log("Express server listening on port " + app.get('port'));
-});
+  app.render('en', function (err, resp) {
+    fs.writeFileSync('en.html', resp);
+  });
+} else {
+
+  app.get('/', routes.en);
+  app.get('/en.html', routes.en);
+  app.get('/fr.html', routes.fr);
+
+  http.createServer(app).listen(app.get('port'), function(){
+    console.log("Express server listening on port " + app.get('port'));
+  });
+
+}
