@@ -18,15 +18,15 @@ html
 
     #banner
       ul
-        li: a(href='/fr') French version
+        li.version: a(href='/fr') French version
         li.icon(data-icon='l') 76 rue notre dame des champs 75006 Paris France
-        li.icon(data-icon='p') +33 (0) 7 70 05 25 69
-        li.icon(data-icon='m') pgherveou@gmail.com
+        li.icon(data-icon='t') +33 (0) 7 70 05 25 69
+        li.icon(data-icon='m'): a(href='mailto:pgherveou@gmail.com') pgherveou@gmail.com
 
 
     .wrapper
 
-      nav.page
+      .side.page
         img.portrait(src='images/me.jpeg')
         :markdown
           - **MSCS** ISEP 2006
@@ -51,9 +51,9 @@ html
             :markdown
               Squadsheet is a social sport web app that helps teams or individuals to manage their sports games.
 
-              - concept
               - Prototype & Design
-              - Development & Production follow-up
+              - Development
+              - Beta testing & Production follow-up
 
         .exp
           .header
@@ -132,6 +132,7 @@ html
           - Server Side: Node.js, mongodb, redis, express, socket.io
           - Client Side: HTML5, CSS3, Jade, JQuery, Backbone.js
           - SCM Tools:  git, github
+          - Testing & Building: mocha, Selenium, Jenkins
           - Production: Amazon EC2, S3, cloudfront
 
           **Other technologies**

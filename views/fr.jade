@@ -18,14 +18,14 @@ html
 
     #banner
       ul
-        li: a(href='/en') Version Anglaise
+        li.version: a(href='/en') English version
         li.icon(data-icon='l') 76 rue notre dame des champs 75006 Paris France
-        li.icon(data-icon='p') +33 (0) 7 70 05 25 69
-        li.icon(data-icon='m') pgherveou@gmail.com
+        li.icon(data-icon='t') +33 (0) 7 70 05 25 69
+        li.icon(data-icon='m'): a(href='mailto:pgherveou@gmail.com') pgherveou@gmail.com
 
     .wrapper
 
-      nav.page
+      .side.page
         img.portrait(src='images/me.jpeg')
         :markdown
           - **MSCS** ISEP 2006
@@ -33,7 +33,6 @@ html
           - **Bilingue** Français / Anglais
 
         .quote.icon(data-icon='q') Looking forward to building next-generation mobile and web app for your social service startup
-
 
 
       section.page.main
@@ -52,9 +51,10 @@ html
             :markdown
               Squadsheet est un réseau social sportif qui permet aux joueurs d'organiser facilement leurs matchs et d'affronter de nouvelles équipes.
 
-              - Création du concept
               - Prototype & Design
-              - Développement et mise en production
+              - Développement
+              - Beta tests et mise en production
+
 
         .exp
           .header
@@ -63,7 +63,7 @@ html
               .position Directeur Technique
             .pull-right
               .dates Jan 2011 - June 2011
-              .place London
+              .place Londres
           .body
             :markdown
               Upclear est une startup spécialisée dans les solutions de trade promotion management dans le secteur de la grande consommation (Danone, ...)
@@ -75,10 +75,10 @@ html
           .header
             .pull-left
               .company SGCIB - commodity trading
-              .position Software engineer
+              .position Ingénieur Software
             .pull-right
               .dates Avr 2007 - Jan 2011
-              .place NYC - Paris - London
+              .place NYC - Paris - Londres
           .body
             :markdown
               Londres (8 mois)
@@ -131,8 +131,9 @@ html
 
           - Serverr: Node.js, mongodb, redis, express, socket.io
           - Client: HTML5, CSS3, Jade, JQuery, Backbone.js
-          - SCM:  git, github
-          - Production: Amazon EC2, S3, cloudfront
+          - SCM: git, github, jenkins
+          - Testing & Building: mocha, Selenium, Jenkins
+          - Production: ubuntu, Amazon EC2, S3, cloudfront
 
           **Autres technologies**
 
