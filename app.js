@@ -29,11 +29,11 @@ app.configure('development', function(){
 
 if (process.env.BUILD) {
   app.render('fr', function (err, resp) {
-    fs.writeFileSync('fr.html', resp);
+    fs.writeFileSync('public/fr.html', resp);
   });
 
   app.render('en', function (err, resp) {
-    fs.writeFileSync('en.html', resp);
+    fs.writeFileSync('public/en.html', resp);
   });
 } else {
 
