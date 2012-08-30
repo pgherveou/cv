@@ -438,6 +438,10 @@ li:before {
 
 @media print {
 
+  .page-break  {
+    page-break-before: always;
+  }
+
   body {
     -webkit-print-color-adjust: exact;
     background: #fff;
@@ -484,9 +488,6 @@ li:before {
     float: none;
   }
 
-  .wrapper {
-    width: 650px;
-  }
 
   .main {
     margin-top: 0px;
