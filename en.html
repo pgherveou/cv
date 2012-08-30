@@ -12,8 +12,15 @@
   </head>
   <body>
     <header>
-      <h1>Pierre-Guillaume Herveou</h1>
-      <p>Software engineer, Founder of squadsheet.com</p>
+      <div class="media">
+        <div class="img">
+          <img src="images/me.jpeg" class="portrait">
+        </div>
+        <div class="bd">
+          <h1>Pierre-Guillaume Herveou</h1>
+          <p>Software engineer, Founder of squadsheet.com</p>
+        </div>
+      </div>
     </header>
     <div id="banner">
       <ul>
@@ -24,17 +31,17 @@
       </ul>
     </div>
     <div class="wrapper">
-      <div class="side page"><img src="images/me.jpeg" class="portrait">
-        <ul>
-          <li><strong>MSCS</strong> ISEP 2006</li>
-          <li><strong>7 years</strong> of experience US/UK/FR</li>
-          <li><strong>Bilingual</strong> French / English</li>
-        </ul>
-        <div data-icon="q" class="quote icon">
-          Looking forward to building next-generation mobile and web app for your social service startup
-        </div>
-      </div>
+
       <section class="page main">
+
+        <div data-icon="q" class="quote icon">Looking forward to building next-generation mobile and web app for your social service startup</div>
+
+        <ul class="higlights">
+          <li><strong>MS in Computer Sciences</strong> ISEP 2006</li>
+          <li><strong>6 years</strong> of experience in the US/UK/FR markets</li>
+          <li><strong>Fluent</strong> French / English</li>
+        </ul>
+
 
         <h3>Experience</h3>
 
@@ -181,5 +188,10 @@
 
       </section>
     </div>
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+
   </body>
 </html>

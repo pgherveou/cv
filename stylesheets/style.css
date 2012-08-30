@@ -202,25 +202,40 @@ small {
   float: left;
 }
 
+
+.media {
+  overflow:hidden;
+  *overflow:visible;
+  zoom:1;
+}
+
+.media .img {
+  float:left;
+}
+
+.media .img img {
+  display:block;
+}
+
+.media .bd {
+  overflow: hidden;
+}
+
+
+
+
 /* =============================================================================
    layout
    ========================================================================== */
 
-.wrapper {
-  width: 560px;
-  margin: 0 auto;
-  position: relative;
-}
-
 header {
-  padding: 25px 20px 40px 20px;
+  padding: 25px 20px 30px 20px;
   margin: 0;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  text-align: center;
   background: #272727;
   box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.75);
   z-index: 99;
@@ -240,6 +255,42 @@ header p {
   margin: 0px;
 }
 
+header .media {
+  width: 620px;
+  margin: auto;
+}
+
+header .media .img {
+  margin-right: 20px;
+  border: 4px solid #4ebbca;
+  border-radius: 50%;
+}
+
+.portrait {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.quote:before {
+  padding-right: 5px;
+  float: left;
+  display: block;
+  height: 30px
+}
+
+.quote {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.higlights {
+  overflow: hidden;
+}
+
+.higlights li {
+  float: left;
+  width: 50%;
+}
 
 #banner {
   z-index: 100;
@@ -301,8 +352,13 @@ header p {
   font-weight: normal;
 }
 
+.wrapper {
+  width: 580px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .main {
-  width: 500px;
   padding: 30px 30px 50px 30px;
   margin: 20px 0;
   margin-top: 190px;
@@ -316,39 +372,6 @@ header p {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
 }
 
-.side {
-  width: 230px;
-  position: fixed;
-  top: 190px;
-  left: 50%;
-  margin-left: -540px;
-}
-
-.side .portrait {
-	width: 200px;
-	margin: 14px;
-	border-radius: 3px;
-}
-
-.side ul {
-  list-style: none;
-  list-style-image: none;
-  font-size: 13px;
-  line-height: 1.3;
-}
-
-.side ul li {
-  padding: 3px 0px;
-  line-height: 16px;
-}
-
-.quote:before {
-  padding-right: 5px;
-}
-
-.quote {
-  padding: 10px;
-}
 
 /* =============================================================================
    experiences
@@ -426,6 +449,7 @@ li:before {
 
   header {
     padding: 0px;
+    padding-bottom: 10px;
     background: none;
   }
 
@@ -461,13 +485,7 @@ li:before {
   }
 
   .wrapper {
-    width: 790px;
-  }
-
-  .side {
-    position: static;
-    margin-left: 0;
-    float: left;
+    width: 650px;
   }
 
   .main {
