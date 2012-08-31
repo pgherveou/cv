@@ -168,7 +168,6 @@ ul {
 
 strong {
   font-weight: bold;
-  color: #333;
 }
 
 
@@ -221,7 +220,13 @@ small {
   overflow: hidden;
 }
 
+.old {
+  text-decoration: line-through;
+}
 
+strong {
+  color: #575757;
+}
 
 
 /* =============================================================================
@@ -271,6 +276,37 @@ header .media .img {
   border-radius: 50%;
 }
 
+
+/* =============================================================================
+   layout side
+   ========================================================================== */
+
+.side {
+  position: fixed;
+  top: 210px;
+  left: 50%;
+  margin-left: -450px;
+}
+
+.side ul {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+.side ul a {
+  color: #666;
+  color: rgba(39,39,39,0.6);
+}
+
+.side ul a:hover {
+  text-decoration: underline;
+}
+
+/* =============================================================================
+   layout main
+   ========================================================================== */
+
+
 .quote:before {
   padding-right: 5px;
   float: left;
@@ -279,8 +315,8 @@ header .media .img {
 }
 
 .quote {
-  font-size: 16px;
-  padding-bottom: 10px;
+  font-size: 1.2em;
+  padding-bottom: 20px;
 }
 
 .higlights {
@@ -308,17 +344,6 @@ header .media .img {
 
   font-size: 12px;
   line-height: 30px;
-}
-
-#banner .version {
-	color: rgba(255,255,255,0.5);
-	font-weight: bold;
-	cursor: pointer;
-  padding-right: 10px;
-}
-
-#banner .version:hover {
-  color: rgba(255,255,255,1);
 }
 
 #banner  a {
@@ -359,7 +384,7 @@ header .media .img {
 }
 
 .main {
-  padding: 30px 30px 50px 30px;
+  padding: 20px 30px 50px 30px;
   margin: 20px 0;
   margin-top: 190px;
   position: relative;
@@ -469,7 +494,7 @@ li:before {
     position: static;
   }
 
-  .version {
+  .side {
     display: none !important;
   }
 
