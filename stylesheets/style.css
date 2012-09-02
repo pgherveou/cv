@@ -319,7 +319,7 @@ header .media .img {
 
 .quote {
   font-size: 1.2em;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .higlights {
@@ -424,7 +424,7 @@ li:before {
 
 .main h3 {
 	border-bottom: 2px solid #666;
-	margin-bottom: 20px
+	margin-bottom: 15px
 }
 
 .main {
