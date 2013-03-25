@@ -30,6 +30,18 @@
     },
     {
       "search": [
+        "quote"
+      ],
+      "code": 113,
+      "uid": "ab95e1351ebaec5850101097cbf7097f",
+      "css": "quote-left",
+      "orig_css": "quote-left",
+      "orig_code": 113,
+      "src": "fontawesome",
+      "from": 61709
+    },
+    {
+      "search": [
         "mobile",
         "iphone"
       ],
