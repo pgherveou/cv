@@ -1,0 +1,45 @@
+{
+  "name": "cv-icons",
+  "glyphs": [
+    {
+      "search": [
+        "mail",
+        "email"
+      ],
+      "code": 109,
+      "uid": "a17986e457f3d85f26c9c240dfd6a4ba",
+      "css": "mail",
+      "orig_css": "mail",
+      "orig_code": 109,
+      "src": "mfglabs",
+      "from": 9993
+    },
+    {
+      "search": [
+        "location",
+        "mark",
+        "marker"
+      ],
+      "code": 108,
+      "uid": "a42b598e4298f3319b25a2702a02e7ff",
+      "css": "location",
+      "orig_css": "location",
+      "orig_code": 108,
+      "src": "entypo",
+      "from": 59172
+    },
+    {
+      "search": [
+        "mobile",
+        "iphone"
+      ],
+      "code": 116,
+      "uid": "767fede84586366cd7d6c835be745454",
+      "css": "mobile",
+      "orig_css": "mobile",
+      "orig_code": 116,
+      "src": "entypo",
+      "from": 128241
+    }
+  ]
+}
